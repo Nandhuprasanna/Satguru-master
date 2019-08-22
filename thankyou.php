@@ -1,15 +1,27 @@
+<?php print_r($_REQUEST);exit;?>
+
 <!doctype html>
-<html lang="en">    
-<?php include '../Satguru-master/header.php';?>
-  <body>
+<html>  
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="satguru">
+    <meta name="author" content="Nandhini">
+    <title>Satguru</title>
+	<!-- Bootstrap core CSS -->
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" rel="stylesheet">
+    <link href="../Satguru-master/style.css" type="text/css" rel="stylesheet">
+</head>
+<body>
 <!-- Slides -->
 <section class="slider">
 <div class="slide-wrapper">
 	<!--logo and phone number-->
 	<nav class="navbar navbar-fixed-top navbar-light">
 	  <div class="container">
-		  <a href="<?php echo get_bloginfo( 'template_directory' );?>/index.php" >
-			 <img class="navbar-brand" src="<?php echo get_bloginfo( 'template_directory' );?>/img/logo.png" alt="">
+		  <a href="../Satguru-master//index.php" >
+			 <img class="navbar-brand" src="../Satguru-master/img/logo.png" alt="">
 		 </a> 
 		  <ul class="nav navbar-nav ml-auto">
 			<li class="nav-item">
@@ -38,13 +50,19 @@
     Having trouble? <a href="https://www.socialbeat.in/" target=_blank>Contact us</a>
   </p>
   <p class="lead">
-    <a class="btn btn-primary btn-sm" href="<?php echo get_bloginfo( 'template_directory' );?>/index.php" role="button">Continue to homepage</a>
+    <a class="btn btn-primary btn-sm" href="/" role="button">Continue to homepage</a>
   </p>
   </div>
 </div>
 </div>
 <footer class="container">
-<?php include '../Satguru-master/footer.php';?>
+<!-- Footer -->
+<footer class="container">
+	<p class="float-right">Designed & Developed By <a href="https://www.socialbeat.in/" target=_blank>Social Beat</a></p>
+	<p>&copy; Copyright 2017 <a href="">Satguru Business Centre</a>. All Rights Reserved</p>
+</footer>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
 </footer>
 </body>
 </html>

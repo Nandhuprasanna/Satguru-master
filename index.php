@@ -1,16 +1,6 @@
 <!doctype html>
 <html>
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="satguru">
-    <meta name="author" content="Nandhini">
-    <title>Satguru</title>
-	<!-- Bootstrap core CSS -->
-	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
-	<link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" rel="stylesheet">
-    <link href="<?php echo get_bloginfo( 'template_directory' );?>/style.css" type="text/css" rel="stylesheet">
-</head>
+<?php get_header(); ?>
 <body>
 <!-- Slides -->
 <section class="slider">
@@ -439,78 +429,7 @@ Dubai court</p>
 
 <div class="footer">
 <!-- Footer -->
-<footer class="container">
-<!-- Footer -->
-<footer class="container">
-	<p class="float-right">Designed & Developed By <a href="https://www.socialbeat.in/" target=_blank>Social Beat</a></p>
-	<p>&copy; Copyright 2017 <a href="">Satguru Business Centre</a>. All Rights Reserved</p>
-</footer>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-validator/0.5.3/js/bootstrapValidator.min.js"></script>
-<script type="text/javascript">
-$(document).ready(function() {
-    $('.registerForm').bootstrapValidator({
-        message: 'This value is not valid',
-        feedbackIcons: {
-            valid: 'glyphicon glyphicon-ok',
-            invalid: 'glyphicon glyphicon-remove',
-            validating: 'glyphicon glyphicon-refresh'
-        },
-        fields: {
-            username: {
-                message: 'The username is not valid',
-                validators: {
-                    notEmpty: {
-                        message: 'The username is required and cannot be empty'
-                    },
-                    stringLength: {
-                        min: 6,
-                        max: 30,
-                        message: 'The username must be more than 6 and less than 30 characters long'
-                    },
-                    regexp: {
-                        regexp: /^[a-zA-Z_]+$/,
-                        message: 'The username can only consist of alphabetical, number and underscore'
-                    }
-                }
-            },
-            email: {
-                validators: {
-                    notEmpty: {
-                        message: 'The email is required and cannot be empty'
-                    },
-                    emailAddress: {
-                        message: 'The input is not a valid email address'
-                    }
-                }
-            },
-            phone: {
-                validators: {
-                    notEmpty: {
-                        message: 'Please supply your phone number'
-                    },
-                    phone: {
-                        country: 'US',
-                        message: 'Please supply a vaild phone number with 10 digits'
-                    }
-                }
-            },
-            officetype: {
-                validators: {
-                    regexp: {
-                        regexp: /^[a-z\s]+$/i,
-                        message: 'The full name can consist of alphabetical characters and spaces only'
-                    }
-                }
-            }
-
-            
-        }
-    });
-});
-</script>
-
+<?php get_footer(); ?>
 </div>
 </body>
 </html>
