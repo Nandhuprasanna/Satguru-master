@@ -1,0 +1,799 @@
+/*
+Theme Name: Satguru master
+Author: Nandhini
+Description: Bootstrap Blog template converted to WordPress
+Version: 1.0.0
+Tags: bootstrap
+*/
+/* GLOBAL STYLES
+-------------------------------------------------- */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Oswald&display=swap');
+.btn.focus, .btn:focus{
+	border:0 none !important; 
+	outline: 0 !important; 
+	box-shadow: none	 !important; 
+}
+.help-block{
+	color:red;
+	display: block;
+}
+/* LOGO AND PHONE NUMBER
+-------------------------------------------------- */
+.slider nav {
+	padding:0;
+}
+.slider nav .nav-link.phone{
+	position:relative;
+	font-family: 'Oswald', sans-serif;
+	color:#fff;
+	font-size:13px;
+}
+.slider nav .nav-link.phone::before{
+	content: url(../Satguru-master/img/phone.png);
+    position: absolute;
+	left: -45px;
+	top: -5px;
+}
+.slider nav .navbar-brand {
+    background: #f5f5f5;
+    width:200px;
+    padding: 15px;
+}
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+.slider{
+	background-color: #000;
+}
+.slide-wrapper {
+    position: relative
+}
+
+.slide-wrapper .red {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: -47px;
+}
+.slide-wrapper .red-content {
+    width: 100%;
+    height: 300px;
+    color: #000;
+}
+.slide-wrapper #homepage-feature{
+		background-size:cover;
+	 background-attachment: fixed;
+	 background-position: top center;
+	 background-repeat: no-repeat;
+}
+
+.slide-wrapper .carousel-control-next,
+.slide-wrapper .carousel-control-prev{
+    top: auto;
+    bottom: 1.5rem;
+}
+.slide-wrapper .carousel-control-next{
+	    left: 2%;
+}
+.form-content-abv{
+	color:#6a6a6a;
+	font-family: 'Raleway', sans-serif;
+	text-align:center;
+	text-transform:uppercase;
+	font-size: 14px;
+}
+.slide-wrapper .red-content .leg{
+	color:#333333;
+	font-weight:bold;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 18px;
+	background: #f5f5f5;
+	padding: 0.5rem 0;
+}
+.slide-wrapper .red-content .btndiv{
+	background:#ff9b51;
+	color:#fff;
+}
+.slide-wrapper .red-content .btndiv .btn{
+	color:#fff;
+		font-family: 'Open Sans', sans-serif;
+		font-weight:bold;
+		font-size:14px;
+}
+.slide-wrapper .red-content .ora{
+	color:#ff8b38;
+}
+.slide-wrapper .red-content  form input{
+	border-radius: 2px;
+	color:#adadad;
+	font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    border:1px solid #ededed;
+}
+.slide-wrapper .red-content  form input::-webkit-input-placeholder { 
+  color: #adadad;;
+}
+.slide-wrapper .red-content  form input::-moz-placeholder { 
+  color: #adadad;
+}
+.slide-wrapper .red-content  form input:-ms-input-placeholder { 
+  color: #adadad;
+}
+.slide-wrapper .red-content  form input:-moz-placeholder { 
+  color: #adadad;
+}
+.slide-wrapper .red-content  form{
+	border: 1px solid #c1c1c1;
+}
+.slide-wrapper .carousel-caption{
+	position: unset;
+}
+.slide-wrapper .carousel-caption h1{
+		font-family: 'Raleway', sans-serif;
+		font-size:28px;
+}
+.slide-wrapper .carousel-caption .short_text{
+	font-size:15px;
+	font-family: 'Raleway', sans-serif;
+	margin-top:1rem;
+}
+.slide-wrapper .carousel-caption h1:after {
+    content: ""; 
+    display: block; 
+	width: 7%;
+    padding-top: 16px;
+    border-bottom: 1px solid #fff; 
+    text-align: left;
+	margin-left: 0;
+}
+
+.four_items_Carousel .carousel-control-prev, .four_items_Carousel .carousel-control-next{
+	display: none;
+	opacity: 1;
+}
+.four_items_Carousel:hover .carousel-control-prev{
+	display:block;
+}
+.four_items_Carousel .carousel-control-next-icon, .four_items_Carousel .carousel-control-prev-icon{
+	height:60px;
+	width:60px;
+	position: absolute;
+	top: 40%;
+}
+.four_items_Carousel:hover .carousel-control-next{
+	display:block;
+}
+@media (min-width: 768px) { 
+	.slide-wrapper .carousel-caption {
+	    text-align: left;
+	    padding-right: 300px;
+	}
+	.slide-wrapper .red {
+	    position: absolute;
+	    left: 50%;
+	    top: 0;
+	    bottom: 0;
+	    padding: 20px 0;
+	    margin-left: -375px;
+	}
+	.slide-wrapper .red {
+	    width: 750px
+	}
+	.slide-wrapper .red-content {
+	    width: 300px;
+	    color: #fff;
+        margin-right:15px;
+        position: absolute;
+		right: 0;
+		bottom: -3rem;
+		background: #fff;
+		color:#6a6a6a;
+	}
+	.slide-wrapper .carousel-caption{
+		padding-top:20vh;
+	}
+}
+@media (min-width: 992px) { 
+	.slide-wrapper .red {
+	    width: 970px;
+	    margin-left: -485px;
+	}
+}
+
+@media (min-width: 1200px) { 
+	.slide-wrapper .red {
+	    width: 1170px;
+	    margin-left: -585px;
+	    position: relative;
+	}
+}
+
+.slide-wrapper #homepage-feature .item {
+    overflow: hidden;
+    height: 700px;
+    background-color: transparent;
+    background-size: contain;
+    background-position: center;
+    background-attachment: fixed;
+}
+}
+.slide-wrapper #homepage-feature > .carousel-control {
+    width: 30px;
+    font-size: 40px;
+    color: #fff;
+    text-shadow: none;
+    filter: none;
+    opacity: 1;
+}
+.slide-wrapper #homepage-feature > .carousel-control span {
+    position: absolute;
+    top: 50%;
+    margin-top: -30px;
+    width: 100%;
+    text-align: center;
+    display: block;
+}
+.slide-wrapper #homepage-feature .carousel-indicators li{
+	width:8px;
+	height:8px;
+	margin-right: 5px;
+}
+.slide-wrapper #homepage-feature .carousel-indicators{
+	left: 0;
+	right: auto;
+}
+/* BANNER BOTTOM SECTION
+------------------------------------------------- */
+.pay_key{
+	margin-top: 3rem;
+}
+.pay_key p.lead span{
+	font-family: 'Raleway', sans-serif;
+	font-size: 13px;
+	line-height: 10px;
+	margin-bottom: 0;
+	margin-top: 10px;
+}
+.hot_infra_trade p.lead span{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 13px;
+	line-height: 14px;
+	margin-bottom: 0;
+	margin-top: 5px;
+	color:#86878b;
+}
+.banner_bottom h6{
+	font-weight:bold;
+	font-size:14px;
+	color:#000;
+	font-family: 'Open Sans', sans-serif;
+}
+#singlebutton.btn.focus, #singlebutton..btn:focus{
+	box-shadow: none;
+}
+#singlebutton{
+	width:100%;
+}
+/* BUSINESS CENTERS SECTION
+------------------------------------------------- */
+
+.business_centers, .Concierge_Services {
+	background: #f5f5f5;
+	padding: 1.5rem 0 3.5rem 0;
+}
+.business_centers .card, .Concierge_Services .card {
+	background:transparent;
+
+}
+.business_centers .card-img-bottom, .Concierge_Services .card-img-bottom  {
+  color: #fff;
+  height: 20rem;
+  background-image: url(../Satguru-master/img/banner2.png);
+  background-position:center;
+  background-repeat:no-repeat;
+  background-size: cover;
+}
+.business_centers  .card .card-img-bottom, .Concierge_Services .card .card-img-bottom {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+.business_centers .tech1{
+	background: #f5f5f5;
+}
+.business_centers .card-body{
+	margin-left:-10rem;
+	background: #ff9b51;
+	color: #fff;
+	padding:2rem 1rem;
+}
+.business_centers  .card-body p.initial_card_text, 
+.Concierge_Services .card-body p.initial_card_text{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	width: 55%;
+}
+.business_centers .card-body .card-text span,
+.Concierge_Services .card-body .card-text span{
+	width: 0; 
+	height: 0; 
+	border-bottom: 6px solid transparent;  /* left arrow slant */
+	border-top: 6px solid transparent; /* right arrow slant */
+	border-left: 8px solid #555555; /* bottom, add background color here */
+	font-size: 0;
+	line-height: 0;
+	margin-right: 5px;
+}
+.business_centers .card-block h4.card-title,
+.Concierge_Services .card-block h4.card-title{
+	font-family: 'Open Sans', sans-serif;
+	margin-top: 15px;
+	font-size: 18px;
+	margin-bottom: 5px;
+	font-weight: bold;
+}
+.business_centers  .card-body .card-text,
+.Concierge_Services .card-body .card-text,
+.Concierge_Services .card-body h5{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	line-height: 14px;
+	 display: -webkit-box;
+	  display: -moz-box;
+	  display: -ms-flexbox;
+	  display: -webkit-flex;
+	  display: flex;
+	  -webkit-box-orient: horizontal;
+	  -moz-box-orient: horizontal;
+	  -webkit-box-direction: normal;
+	  -moz-box-direction: normal;
+	  -webkit-flex-direction: row;
+	  -ms-flex-direction: row;
+	  flex-direction: row;
+	  margin-bottom:8px;
+}
+
+.business_centers h2.
+.Concierge_Services h2{
+	font-size: 21px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: bold;
+	color: #000;
+}
+.business_centers h6,
+.Concierge_Services h6{
+	color:#86878b;
+	font-size: 13px;
+	line-height: 20px;
+	font-family: 'Open Sans', sans-serif;
+}
+.business_centers .card, .Concierge_Services .card{
+	border: 0 none;
+	border-radius: 0
+}
+/* CONCIERGE SERVICES SECTION
+------------------------------------------------- */
+
+.Concierge_Services{
+	background: #ffffff;
+}
+.Concierge_Services .card-body{
+	background: #373737;
+	color: #ffffff;
+	padding-top: 2rem;
+}
+.Concierge_Services .card-img-bottom {
+  background-image: url(../Satguru-master/img/banner3.png);
+}
+.Concierge_Services .card-body .card-text span{
+	border-left: 8px solid #ff9b51; /* bottom, add background color here */
+}
+.Concierge_Services .card-body p.initial_card_text{
+	width:100%
+}
+.Concierge_Services .card-body h5{
+	margin-bottom: 20px;
+	margin-left: -6px;
+}
+.Concierge_Services .right_img{
+	z-index:0;
+}
+.Concierge_Services .left_grey{
+	z-index:1;
+}
+.Concierge_Services .left_grey .card-block{
+	width: 42rem;
+}
+/* BUSINESS SETUP SECTION
+------------------------------------------------- */
+.b_setup {
+	padding: 3.5rem 0 3.5rem 0;
+}
+.b_setup .card-body p.initial_card_text{
+	width: 100%;
+}
+.b_setup .card-img-bottom{
+	background-image: url(../Satguru-master/img/banner4.png);
+}
+/* BOOK AND ADDRESS SECTION
+------------------------------------------------- */
+.book_address .btn.book_a_visit{
+	background:transparent;
+	color:#fff;
+	border:1px solid #fff;
+	border-radius:0;
+	font-size: 11px;
+	font-weight: 700;
+}
+.book_address h5{
+	font-weight:bold;
+}
+.book_address{
+	background:#373737;
+	color:#fff;
+	padding:3rem 0;
+}
+.off_address address{
+	 display: -webkit-box;
+	  display: -moz-box;
+	  display: -ms-flexbox;
+	  display: -webkit-flex;
+	  display: flex;
+	  -webkit-box-orient: vertical;
+	  -moz-box-orient: vertical;
+	  -webkit-box-direction: normal;
+	  -moz-box-direction: normal;
+	  -webkit-flex-direction: column;
+	  -ms-flex-direction: column;
+	  flex-direction: column;
+}
+.off_address h2{
+	font-size: 1.25rem;
+	font-weight: bold;
+}
+.off_address address{
+	margin-top: 1rem;
+}
+.off_address address span{
+	font-size: 14px;
+}
+.business_centers .card-body, .Concierge_Services .card-body, .business_centers .card-body{
+	min-height: 250px;
+}
+
+/* FOOTER CSS
+-------------------------------------------------- */
+footer{
+		margin-top:2rem;
+}
+footer p{
+	color:#4c4d4e;
+	font-size: 12px;
+	margin-top:0;
+}
+footer p a{
+	font-weight:bold;
+	color:#4c4d4e;
+}
+/* THANKYOU PAGE CSS
+-------------------------------------------------- */
+.thankyou .jumbotron{
+	height:75vh;
+}
+.thankyou .lead .btn{
+	background-color: #ec7323;
+	border-color: #ec7323;
+}
+/* SUCESS TICKMARK CSS
+-------------------------------------------------- */
+.success-checkmark {
+  width: 80px;
+  height: 115px;
+  margin: 0 auto;
+}
+.success-checkmark .check-icon {
+  width: 80px;
+  height: 80px;
+  position: relative;
+  border-radius: 50%;
+  box-sizing: content-box;
+  border: 4px solid #4CAF50;
+}
+.success-checkmark .check-icon::before {
+  top: 3px;
+  left: -2px;
+  width: 30px;
+  transform-origin: 100% 50%;
+  border-radius: 100px 0 0 100px;
+}
+.success-checkmark .check-icon::after {
+  top: 0;
+  left: 30px;
+  width: 60px;
+  transform-origin: 0 50%;
+  border-radius: 0 100px 100px 0;
+  animation: rotate-circle 4.25s ease-in;
+}
+.success-checkmark .check-icon::before, .success-checkmark .check-icon::after {
+  content: '';
+  height: 100px;
+  position: absolute;
+  background:transparent;
+  transform: rotate(-45deg);
+}
+.success-checkmark .check-icon .icon-line {
+  height: 5px;
+  background-color: #ed6e23;
+  display: block;
+  border-radius: 2px;
+  position: absolute;
+  z-index: 10;
+}
+.success-checkmark .check-icon .icon-line.line-tip {
+  top: 46px;
+  left: 14px;
+  width: 25px;
+  transform: rotate(45deg);
+  animation: icon-line-tip 0.75s;
+}
+.success-checkmark .check-icon .icon-line.line-long {
+  top: 38px;
+  right: 8px;
+  width: 47px;
+  transform: rotate(-45deg);
+  animation: icon-line-long 0.75s;
+}
+.success-checkmark .check-icon .icon-circle {
+  top: -4px;
+  left: -4px;
+  z-index: 10;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  position: absolute;
+  box-sizing: content-box;
+  border: 4px solid rgba(76, 175, 80, 0.5);
+}
+.success-checkmark .check-icon .icon-fix {
+  top: 8px;
+  width: 5px;
+  left: 26px;
+  z-index: 1;
+  height: 85px;
+  position: absolute;
+  transform: rotate(-45deg);
+  background-color: transparent;
+}
+
+@keyframes rotate-circle {
+  0% {
+    transform: rotate(-45deg);
+  }
+  5% {
+    transform: rotate(-45deg);
+  }
+  12% {
+    transform: rotate(-405deg);
+  }
+  100% {
+    transform: rotate(-405deg);
+  }
+}
+@keyframes icon-line-tip {
+  0% {
+    width: 0;
+    left: 1px;
+    top: 19px;
+  }
+  54% {
+    width: 0;
+    left: 1px;
+    top: 19px;
+  }
+  70% {
+    width: 50px;
+    left: -8px;
+    top: 37px;
+  }
+  84% {
+    width: 17px;
+    left: 21px;
+    top: 48px;
+  }
+  100% {
+    width: 25px;
+    left: 14px;
+    top: 45px;
+  }
+}
+@keyframes icon-line-long {
+  0% {
+    width: 0;
+    right: 46px;
+    top: 54px;
+  }
+  65% {
+    width: 0;
+    right: 46px;
+    top: 54px;
+  }
+  84% {
+    width: 55px;
+    right: 0px;
+    top: 35px;
+  }
+  100% {
+    width: 47px;
+    right: 8px;
+    top: 38px;
+  }
+}
+
+/* RESPONSIVE BANNER CSS
+-------------------------------------------------- */
+
+@media (min-width: 40em) {
+ .slide-wrapper .carousel-caption p {
+    margin-bottom: 1.25rem;
+    font-size: 1.25rem;
+    line-height: 1.4;
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width:1200px){
+.slide-wrapper .red-content{
+	bottom:0;
+}
+
+}
+/* RESPONSIVE 4 ITEM CAROUSEL CSS
+-------------------------------------------------- */
+.four_items_Carousel .carousel-inner .carousel-item .inner_item img{
+	width:100%;
+	-webkit-filter: grayscale(100%);
+	  filter: gray;
+	-webkit-filter: grayscale(100%);
+	-webkit-transition: all .6s ease;
+	-webkit-backface-visibility: hidden;
+	transition: all .6s ease;
+}
+.four_items_Carousel .carousel-inner .carousel-item .inner_item:hover img{
+	-webkit-filter: grayscale(0%);
+	filter: grayscale(0%);
+	filter: none;
+	cursor:pointer;
+}
+.four_items_Carousel .inner_item {
+	position:relative;
+}
+.four_items_Carousel .inner_item p{
+	margin: 0 auto;
+	color: #ffffff;
+	width: 62%;
+	padding-top: 25px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight:bold;
+	font-size:17px;
+}
+.four_items_Carousel [class^="overlay"] {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  width: 100%;
+  height: 21%;
+}
+.four_items_Carousel .overlay1{
+	  background-color: rgba(12,12,12,0.9);
+}
+.four_items_Carousel .overlay2{
+	  background-color: rgba(36,36,37,0.9);
+}
+.four_items_Carousel .overlay3{
+	  background-color: rgba(55,55,55,0.9);
+}
+.four_items_Carousel .overlay4{
+	  background-color: rgba(93,93,93,0.9);
+}
+
+@media only screen and (max-width:1860px) {
+	
+	.four_items_Carousel [class^="overlay"]{
+		height: 33%;
+	}
+}
+@media only screen and (min-width:1260px) and (max-width:1500px){
+	.four_items_Carousel .inner_item p {
+		font-size: 16px;
+		padding-top: 8px;
+    }
+} 
+@media only screen and (max-width:1259px){
+	.four_items_Carousel .inner_item p{
+		font-size: 12px;
+		padding-top: 5px;
+	}
+}
+@media (max-width: 991px) { 
+	.business_centers .card-body, .Concierge_Services .card-body, .business_centers .card-body{
+		margin-left: 0;
+	}
+	.Concierge_Services .left_grey .card-block{
+		width:100%;
+	}
+}
+@media only screen and (max-width:767px){
+	.business_centers .card-body, .Concierge_Services .card-body, .business_centers .card-body{
+		margin-left:0;
+	}
+	.slider nav .navbar-brand{
+		width:130px;
+	}
+	.slider{
+		background-color:transparent;
+	}
+	.slide-wrapper .red{
+		margin-top: 2rem;
+	}
+	.four_items_Carousel .carousel-control-next-icon, .four_items_Carousel .carousel-control-prev-icon {
+		height: 30px;
+		width: 30px;
+		position: absolute;
+		top: 20%;
+	}
+	footer p{
+		width: 100%;
+		text-align: center;
+	}
+	.off_address{
+		padding-left:30px;
+		padding-right:30px;
+	}
+	.business_centers .xs-flex-column, .book_address .d-flex{
+			  -webkit-box-orient: vertical;
+	  -moz-box-orient: vertical;
+	  -webkit-box-direction: normal;
+	  -moz-box-direction: normal;
+	  -webkit-flex-direction: column;
+	  -ms-flex-direction: column;
+	  flex-direction: column;
+	}
+	.hot_infra_trade{
+	  -webkit-box-orient: vertical !important;
+	  -moz-box-orient: vertical !important;
+	  -webkit-box-direction: normal !important;
+	  -moz-box-direction: normal !important;
+	  -webkit-flex-direction: column !important;
+	  -ms-flex-direction: column !important;
+	  flex-direction: column !important;
+	}
+	.book_address .d-flex .btn{
+		margin:10px 0 !important;
+	}
+	.banner_bottom h6{
+		margin-top: 2rem;
+		margin-bottom: 2rem;
+	}
+	.business_centers .card-body p.initial_card_text, .Concierge_Services .card-body p.initial_card_text{
+		width:100%;
+	}
+	.slide-wrapper .carousel-caption h1::after{
+		text-align: center;
+		width: 50%;
+		margin: auto;
+	}
+	.slide-wrapper #homepage-feature .item {
+		height: 400px;
+	}
+	.pay_key{
+		justify-content: center;
+	}
+}
+@media only screen and (max-width:576px){
+	.book_address .btn.book_a_visit{
+		width:100% !important;	
+	}
+}
